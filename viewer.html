@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Viewer</title>
+  <link rel="stylesheet" href="viewer.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">← Back</a>
+
+    <div class="controls">
+      <button id="prev" aria-label="Previous page">‹</button>
+
+      <div class="pagebox">
+        <input id="pageInput" type="number" min="1" value="1" />
+        <span class="muted">/</span>
+        <span id="pageCount" class="muted">—</span>
+      </div>
+
+      <button id="next" aria-label="Next page">›</button>
+
+      <a class="download" href="assets/portfolio.pdf" target="_blank" rel="noreferrer">PDF</a>
+    </div>
+  </header>
+
+  <main class="stage">
+    <div class="canvasWrap">
+      <canvas id="pdfCanvas"></canvas>
+      <div id="loading" class="loading">Loading…</div>
+    </div>
+  </main>
+
+  <!-- PDF.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.js"></script>
+  <script src="viewer.js"></script>
+</body>
+</html>
