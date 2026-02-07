@@ -3,7 +3,7 @@ const url = "./assets/portfolio.pdf";
 
 // PDF.js worker
 pdfjsLib.GlobalWorkerOptions.workerSrc =
-  "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.js";
+  "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.worker.min.js";
 
 const canvas = document.getElementById("pdfCanvas");
 const ctx = canvas.getContext("2d");
@@ -102,4 +102,5 @@ function bindUI() {
   bindUI();
   clampAndGo(getHashPage());
 })();
+
 
