@@ -1,5 +1,5 @@
 // PDF file path
-const url = "assets/portfolio.pdf";
+const url = "./assets/portfolio.pdf";
 
 // PDF.js worker
 pdfjsLib.GlobalWorkerOptions.workerSrc =
@@ -102,3 +102,4 @@ function bindUI() {
   bindUI();
   clampAndGo(getHashPage());
 })();
+
